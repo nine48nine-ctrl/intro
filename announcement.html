@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประกาศรายชื่อผู้มีสิทธิ์เข้าศึกษา - มจพ.</title>
+    <link href="style\language.css" rel="stylesheet">
+    <link href="style\base.css" rel="stylesheet">
+    <link href="style\announcement.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- ภาพส่วนหัว -->
+        <img src="image/header_1.png" alt="Header KMUTNB" class="layout-img">
+        <!-- แถบเมนูหลัก -->
+<nav class="main-nav">
+    <a href="index.html">หน้าแรก</a>
+    <a href="announcement.html">ประกาศรายชื่อ <span class="dropdown-icon">▼</span></a>
+    <a href="scholarship.html">ทุนการศึกษา <span class="dropdown-icon">▼</span></a>
+    <a href="print_doc.html">พิมพ์เอกสาร <span class="dropdown-icon">▼</span></a>
+    <a href="contact.html">ติดต่อสอบถาม</a>
+</nav>
+
+        <img src="image/header_2_register.png" alt="Banner Apply" class="layout-img">
+
+        <!-- แถบเมนูย่อย -->
+        <nav class="sub-nav">
+            <a href="index.html">ข่าวการรับสมัคร</a>
+            <a href="courses.html">กรอกใบสมัคร</a>
+            <a href="qualification.html">ตรวจสอบคุณวุฒิ</a>
+            <a href="curriculum.html">หลักสูตรการศึกษา</a>
+            <a href="schedule.html">กำหนดการรับนักศึกษาใหม่</a>
+        </nav>
+
+        <div class="content-area">
+            
+            <div class="section-header">
+                <h1>ประกาศผลและรายชื่อผู้มีสิทธิ์เข้าศึกษาต่อ</h1>
+                <p>ประจำปีการศึกษา 2570 มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</p>
+            </div>
+
+            <!-- กล่องค้นหาด่วน -->
+            <div class="search-card">
+                <div class="search-title">🔍 ตรวจสอบผลการคัดเลือกเฉพาะบุคคล</div>
+                <div class="search-box">
+                    <input type="text" id="citizenId" class="search-input" placeholder="กรอกเลขประจำตัวประชาชน 13 หลัก" maxlength="13">
+                    <button class="btn-search" onclick="checkResult()">ค้นหา</button>
+                </div>
+                <div id="result-box" class="result-box"></div>
+            </div>
+
+            <!-- รายการเอกสารประกาศดาวน์โหลด -->
+            <div class="table-title">รายการประกาศรายชื่อผู้ผ่านการคัดเลือก (ไฟล์ PDF)</div>
+            <table class="announce-table">
+                <thead>
+                    <tr>
+                        <th style="width: 15%;">รอบการสมัคร</th>
+                        <th>หัวข้อประกาศ</th>
+                        <th style="width: 15%;">วันที่ประกาศ</th>
+                        <th style="width: 12%; text-align: center;">ดาวน์โหลด</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="badge-round">TCAS 70 รอบที่ 1</span></td>
+                        <td>ประกาศรายชื่อผู้มีสิทธิ์สอบสัมภาษณ์ โครงการ Portfolio ประจำปีการศึกษา 2570</td>
+                        <td>15 พ.ย. 2569</td>
+                        <td style="text-align: center;"><a href="#" class="btn-download">PDF</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge-round">โควตาเรียนดี</span></td>
+                        <td>ประกาศผลการคัดเลือกผู้มีสิทธิ์เข้าศึกษาต่อ ระดับปริญญาตรี (โควตาเรียนดี)</td>
+                        <td>10 พ.ย. 2569</td>
+                        <td style="text-align: center;"><a href="#" class="btn-download">PDF</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge-round">เทียบโอน / ต่อเนื่อง</span></td>
+                        <td>ประกาศรายชื่อผู้มีสิทธิ์สอบข้อเขียนและสัมภาษณ์ หลักสูตรเทียบโอน 2 ปีครึ่ง และ 3 ปี</td>
+                        <td>28 ต.ค. 2569</td>
+                        <td style="text-align: center;"><a href="#" class="btn-download">PDF</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <img src="image/footer.png" alt="Footer Contact" class="layout-img">
+    </div>
+
+    
+    <script>
+        function checkResult() {
+            const input = document.getElementById("citizenId").value.trim();
+            const resultBox = document.getElementById("result-box");
+
+            if (input.length !== 13 || isNaN(input)) {
+                alert("กรุณากรอกเลขประจำตัวประชาชนให้ครบ 13 หลักเป็นตัวเลข");
+                return;
+            }
+
+            resultBox.style.display = "block";
+            resultBox.innerHTML = `
+                🎉 <strong>ผลการค้นหา:</strong> ยินดีด้วยค่ะ!<br>
+                เลขบัตร: <strong>${input}</strong><br>
+                สถานะ: <strong>ผ่านการคัดเลือก (มีสิทธิ์เข้าศึกษาต่อ)</strong><br>
+                สาขาวิชา: <strong>วิศวกรรมสารสนเทศและเครือข่าย (INE)</strong><br>
+                <em>*โปรดเข้าสู่ระบบเพื่อยืนยันสิทธิ์และพิมพ์เอกสารมอบตัว*</em>
+            `;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ - มจพ.</title>
+    <link href="style\language.css" rel="stylesheet">
+    <link href="style\base.css" rel="stylesheet">
+    <link href="style\account.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header">
+        <!-- ใส่โลโก้ มจพ. ด้านซ้าย -->
+        <h2>การสมัครเข้าศึกษาต่อ ปีการศึกษา 2570</h2>
+    </div>
+
+    <div class="main-content">
+        <div class="auth-card">
+            <h2>เข้าสู่ระบบ</h2>
+            <div class="form-group">
+                <label>เลขประจำตัวประชาชน</label>
+                <input type="text" placeholder="เลขประจำตัวประชาชน" id="userId">
+            </div>
+            <div class="form-group">
+                <label>รหัสผ่าน</label>
+                <input type="password" placeholder="รหัสผ่าน" id="userPass">
+            </div>
+            <!-- ปุ่มกดแล้วทำงานฟังก์ชัน login() -->
+            <button class="btn-submit" onclick="login()">Login</button>
+            
+            <div class="auth-links">
+                <a href="#">ลืมรหัสผ่านหรือไม่?</a>
+                <a href="register.html">สร้างบัญชีผู้ใช้งาน คลิกที่นี่</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        ติดต่อเราได้ที่: กองบริการการศึกษา มจพ. | โทร: +66 2 555-2000
+    </div>
+
+    <script>
+        function login() {
+            // จำลองการเข้าระบบโดยบันทึกค่าลง Local Storage
+            localStorage.setItem("isLoggedIn", "true");
+            localStorage.setItem("username", "นางสาว สมหญิง");
+            // เปลี่ยนหน้าไปที่โปรไฟล์
+            window.location.href = "profile.html";
+        }
+    </script>
+</body>
+</html>

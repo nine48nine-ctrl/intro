@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>กรอกใบสมัคร - มจพ.</title>
+    <link href="style\language.css" rel="stylesheet">
+    <link href="style\base.css" rel="stylesheet">
+    <link href="style\admission.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <img src="image/header_1.png" alt="Header KMUTNB" class="layout-img">
+
+        <nav class="main-nav">
+            <a href="index.html">หน้าแรก</a>
+            <a href="announcement.html">ประกาศรายชื่อ <span class="dropdown-icon">▼</span></a>
+            <a href="scholarship.html">ทุนการศึกษา <span class="dropdown-icon">▼</span></a>
+            <a href="print_doc.html">พิมพ์เอกสาร <span class="dropdown-icon">▼</span></a>
+            <a href="contact.html">ติดต่อสอบถาม</a>
+        </nav>
+
+        <img src="image/header_2_register.png" alt="Banner Apply" class="layout-img">
+
+        <nav class="sub-nav">
+            <a href="index.html">ข่าวการรับสมัคร</a>
+            <a href="courses.html" class="active">กรอกใบสมัคร</a>
+            <a href="qualification.html">ตรวจสอบคุณวุฒิ</a>
+            <a href="curriculum.html">หลักสูตรการศึกษา</a>
+            <a href="schedule.html">กำหนดการรับนักศึกษาใหม่</a>
+        </nav>
+
+        <div class="form-wrapper">
+            <div class="form-header-title">กรอกใบสมัครคัดเลือกเข้าศึกษาต่อ</div>
+            <div class="form-date">ปีการศึกษา 2570</div>
+
+            <!-- ผูกคำสั่ง onsubmit เข้ากับฟังก์ชัน handleFormSubmit -->
+            <form onsubmit="handleFormSubmit(event)">
+                <div class="form-card">
+                    
+                    <!-- คณะที่ต้องการ -->
+                    <div class="form-group">
+                        <label>กรุณาเลือกคณะที่ต้องการ</label>
+                        <select id="f_faculty" required>
+                            <option value="">-- กรุณาเลือกคณะ --</option>
+                            <option value="คณะวิศวกรรมศาสตร์">คณะวิศวกรรมศาสตร์</option>
+                            <option value="คณะวิทยาศาสตร์ประยุกต์">คณะวิทยาศาสตร์ประยุกต์</option>
+                            <option value="คณะเทคโนโลยีและการจัดการอุตสาหกรรม">คณะเทคโนโลยีและการจัดการอุตสาหกรรม</option>
+                        </select>
+                    </div>
+
+                    <!-- สาขาวิชา 3 อันดับ -->
+                    <div class="form-group">
+                        <label>กรุณาเลือกสาขาวิชาที่ต้องการ 3 อันดับแรก</label>
+                        <select id="f_major1" style="margin-bottom: 8px;" required>
+                            <option value="">-- เลือกอันดับที่ 1 --</option>
+                            <option value="สาขาวิชาเทคโนโลยีเครื่องกลและกระบวนการผลิต (MM)">สาขาวิชาเทคโนโลยีเครื่องกลและกระบวนการผลิต (MM)</option>
+                            <option value="สาขาวิชาเทคโนโลยีสารสนเทศ (IT)">สาขาวิชาเทคโนโลยีสารสนเทศ (IT)</option>
+                            <option value="สาขาวิชาคอมพิวเตอร์ช่วยออกแบบและบริหารงานก่อสร้าง (CA)">สาขาวิชาคอมพิวเตอร์ช่วยออกแบบและบริหารงานก่อสร้าง (CA)</option>
+                            <option value="สาขาวิชาวิศวกรรมอุตสาหการและการจัดการ (IEM)">สาขาวิชาวิศวกรรมอุตสาหการและการจัดการ (IEM)</option>
+                            <option value="สาขาวิชาวิศวกรรมสารสนเทศและเครือข่าย (INE)">สาขาวิชาวิศวกรรมสารสนเทศและเครือข่าย (INE)</option>
+                            <option value="สาขาวิชาวิศวกรรมเกษตรและอาหาร (ARE)">สาขาวิชาวิศวกรรมเกษตรและอาหาร (ARE)</option>
+                        </select>
+
+                        <select id="f_major2" style="margin-bottom: 8px;">
+                            <option value="">-- เลือกอันดับที่ 2 --</option>
+                            <option value="สาขาวิชาเทคโนโลยีเครื่องกลและกระบวนการผลิต (MM)">สาขาวิชาเทคโนโลยีเครื่องกลและกระบวนการผลิต (MM)</option>
+                            <option value="สาขาวิชาเทคโนโลยีสารสนเทศ (IT)">สาขาวิชาเทคโนโลยีสารสนเทศ (IT)</option>
+                            <option value="สาขาวิชาคอมพิวเตอร์ช่วยออกแบบและบริหารงานก่อสร้าง (CA)">สาขาวิชาคอมพิวเตอร์ช่วยออกแบบและบริหารงานก่อสร้าง (CA)</option>
+                            <option value="สาขาวิชาวิศวกรรมอุตสาหการและการจัดการ (IEM)">สาขาวิชาวิศวกรรมอุตสาหการและการจัดการ (IEM)</option>
+                            <option value="สาขาวิชาวิศวกรรมสารสนเทศและเครือข่าย (INE)">สาขาวิชาวิศวกรรมสารสนเทศและเครือข่าย (INE)</option>
+                            <option value="สาขาวิชาวิศวกรรมเกษตรและอาหาร (ARE)">สาขาวิชาวิศวกรรมเกษตรและอาหาร (ARE)</option>
+                        </select>
+
+                        <select id="f_major3">
+                            <option value="">-- เลือกอันดับที่ 3 --</option>
+                            <option value="สาขาวิชาเทคโนโลยีเครื่องกลและกระบวนการผลิต (MM)">สาขาวิชาเทคโนโลยีเครื่องกลและกระบวนการผลิต (MM)</option>
+                            <option value="สาขาวิชาเทคโนโลยีสารสนเทศ (IT)">สาขาวิชาเทคโนโลยีสารสนเทศ (IT)</option>
+                            <option value="สาขาวิชาคอมพิวเตอร์ช่วยออกแบบและบริหารงานก่อสร้าง (CA)">สาขาวิชาคอมพิวเตอร์ช่วยออกแบบและบริหารงานก่อสร้าง (CA)</option>
+                            <option value="สาขาวิชาวิศวกรรมอุตสาหการและการจัดการ (IEM)">สาขาวิชาวิศวกรรมอุตสาหการและการจัดการ (IEM)</option>
+                            <option value="สาขาวิชาวิศวกรรมสารสนเทศและเครือข่าย (INE)">สาขาวิชาวิศวกรรมสารสนเทศและเครือข่าย (INE)</option>
+                            <option value="สาขาวิชาวิศวกรรมเกษตรและอาหาร (ARE)">สาขาวิชาวิศวกรรมเกษตรและอาหาร (ARE)</option>
+                        </select>
+                    </div>
+
+                    <!-- ข้อมูลส่วนตัว -->
+                    <div class="form-section-title">ข้อมูลส่วนตัว</div>
+                    <div class="form-row">
+                        <div class="col"><label>ชื่อ</label><input type="text" id="f_fname" required></div>
+                        <div class="col"><label>นามสกุล</label><input type="text" id="f_lname" required></div>
+                    </div>
+
+                    <div class="form-row">
+                        <div style="flex: 0.8;"><label>อายุ</label><input type="text" id="f_age"></div>
+                        <div style="flex: 1.5;"><label>วัน/เดือน/ปีเกิด</label><input type="text" id="f_birthday" placeholder="เช่น 01/01/2550"></div>
+                        <div class="col"><label>สัญชาติ</label><input type="text" id="f_nation" value="ไทย"></div>
+                        <div class="col"><label>ศาสนา</label><input type="text" id="f_religion" value="พุทธ"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>เลขบัตรประชาชน (13 หลัก)</label>
+                        <div class="id-card-inputs" id="idCardContainer">
+                            <input type="text" maxlength="1"><input type="text" maxlength="1"><input type="text" maxlength="1"><input type="text" maxlength="1"><input type="text" maxlength="1"><input type="text" maxlength="1"><input type="text" maxlength="1"><input type="text" maxlength="1"><input type="text" maxlength="1"><input type="text" maxlength="1"><input type="text" maxlength="1"><input type="text" maxlength="1"><input type="text" maxlength="1">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col">
+                            <label>วุฒิที่สมัคร</label>
+                            <select id="f_degree_applied">
+                                <option value="ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)">ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</option>
+                                <option value="มัธยมศึกษาปีที่ 6 (ม.6)">มัธยมศึกษาปีที่ 6 (ม.6)</option>
+                                <option value="ประกาศนียบัตรวิชาชีพ (ปวช.)">ประกาศนียบัตรวิชาชีพ (ปวช.)</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label>เบอร์โทรนักศึกษาที่ติดต่อได้</label>
+                            <input type="text" id="f_phone" required>
+                        </div>
+                    </div>
+
+                    <!-- ประวัติการศึกษาเดิม -->
+                    <div class="form-section-title">ประวัติการศึกษาเดิม</div>
+                    <div class="form-row">
+                        <div style="flex: 2;"><label>สถานศึกษาที่จบมา</label><input type="text" id="f_school"></div>
+                        <div style="flex: 1;"><label>เกรดเฉลี่ย (GPA)</label><input type="text" id="f_gpa"></div>
+                        <div style="flex: 2;"><label>สาขาวิชาเดิม</label><input type="text" id="f_old_major"></div>
+                    </div>
+
+                    <!-- ข้อมูลผู้ปกครอง -->
+                    <div class="form-section-title">ข้อมูลผู้ปกครอง</div>
+                    <div class="form-row">
+                        <div class="col"><label>ชื่อผู้ปกครอง</label><input type="text" id="f_pfname"></div>
+                        <div class="col"><label>นามสกุล</label><input type="text" id="f_plname"></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label>ความสัมพันธ์ต่อนักศึกษา</label>
+                            <select id="f_prel">
+                                <option value="บิดา">บิดา</option>
+                                <option value="มารดา">มารดา</option>
+                                <option value="ผู้ปกครอง / ญาติ">ผู้ปกครอง / ญาติ</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label>เบอร์โทรผู้ปกครองที่ติดต่อได้</label>
+                            <input type="text" id="f_pphone">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="btn-group">
+                    <a href="index.html" class="btn">ยกเลิก</a>
+                    <button type="submit" class="btn btn-submit">ยืนยันข้อมูล</button>
+                </div>
+            </form>
+        </div>
+
+        <img src="image/footer.png" alt="Footer Contact" class="layout-img">
+    </div>
+
+<script>
+    // สคริปต์สลับ Focus ไปช่องถัดไปอัตโนมัติเมื่อพิมพ์เลขบัตรประชาชน
+    const cardInputs = document.querySelectorAll("#idCardContainer input");
+    cardInputs.forEach((input, idx) => {
+        input.addEventListener("input", () => {
+            if (input.value.length === 1 && idx < cardInputs.length - 1) {
+                cardInputs[idx + 1].focus();
+            }
+        });
+        input.addEventListener("keydown", (e) => {
+            if (e.key === "Backspace" && !input.value && idx > 0) {
+                cardInputs[idx - 1].focus();
+            }
+        });
+    });
+
+    function handleFormSubmit(e) {
+        e.preventDefault();
+
+        // รวมเลขบัตร 13 ตัว
+        let idCards = document.querySelectorAll("#idCardContainer input");
+        let idCardStr = "";
+        idCards.forEach(input => idCardStr += input.value.trim());
+
+        const formData = {
+            faculty: document.getElementById("f_faculty").value,
+            major1: document.getElementById("f_major1").value,
+            major2: document.getElementById("f_major2").value,
+            major3: document.getElementById("f_major3").value,
+            fname: document.getElementById("f_fname").value,
+            lname: document.getElementById("f_lname").value,
+            age: document.getElementById("f_age").value,
+            birthday: document.getElementById("f_birthday").value,
+            nation: document.getElementById("f_nation").value,
+            religion: document.getElementById("f_religion").value,
+            idCard: idCardStr,
+            degreeApplied: document.getElementById("f_degree_applied").value,
+            phone: document.getElementById("f_phone").value,
+            school: document.getElementById("f_school").value,
+            gpa: document.getElementById("f_gpa").value,
+            oldMajor: document.getElementById("f_old_major").value,
+            p_fname: document.getElementById("f_pfname").value,
+            p_lname: document.getElementById("f_plname").value,
+            p_rel: document.getElementById("f_prel").value,
+            p_phone: document.getElementById("f_pphone").value
+        };
+
+        // บันทึกลง LocalStorage
+        localStorage.setItem("admissionFormData", JSON.stringify(formData));
+
+        alert("บันทึกข้อมูลเรียบร้อยแล้ว กำลังนำท่านไปยังหน้าพิมพ์เอกสาร...");
+        window.location.href = "print_doc.html";
+    }
+</script>
+</body>
+</html>

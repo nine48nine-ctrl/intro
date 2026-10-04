@@ -1,0 +1,17 @@
+body, html { 
+    background: #fff; 
+}
+.container { 
+    box-shadow: none; 
+}
+.content-area { 
+    padding: 50px 20px; 
+    display: flex; 
+    justify-content: center; 
+    min-height: 500px; 
+}
+.content-area img { 
+    max-width: 1000px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,.12); 
+    border-radius: 8px; 
+}

@@ -1,0 +1,118 @@
+.content-area { 
+    min-height: 600px; 
+}
+.section-header { 
+    margin-bottom: 40px; 
+}
+.section-header h1 { 
+    margin-bottom: 8px; 
+}
+
+.search-card { 
+    background: #f7f9fa; 
+    border: 1px solid #e1e8ed; 
+    border-radius: 12px; 
+    padding: 35px; 
+    max-width: 850px; 
+    margin: 0 auto 50px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,.03); 
+}
+.search-title { 
+    font-size: 18px; 
+    font-weight: 600; 
+    color: #333; 
+    margin-bottom: 18px; 
+    text-align: center; 
+}
+.search-box { 
+    display: flex; 
+    gap: 12px; 
+}
+.search-input { 
+    flex: 1; 
+    padding: 12px 18px; 
+    border: 1.5px solid #ccc; 
+    border-radius: 6px; font-family: 'Kanit', sans-serif; 
+    font-size: 15px; 
+    outline: none; 
+    transition: .2s; 
+}
+.search-input:focus { 
+    border-color: #ff5722; 
+}
+.btn-search { 
+    background: #ff5722; 
+    color: #fff; 
+    border: none; 
+    padding: 0 35px; 
+    border-radius: 6px; 
+    font-family: 'Kanit', sans-serif; 
+    font-size: 16px; 
+    font-weight: 500; 
+    cursor: pointer; 
+    transition: .2s; 
+}
+.btn-search:hover { 
+    background: #e64a19; 
+}
+.result-box { 
+    display: none; 
+    margin-top: 20px; 
+    padding: 18px; 
+    border-radius: 8px; 
+    background: #e8f5e9; 
+    border: 1px solid #c8e6c9; 
+    color: #2e7d32; 
+    font-size: 15px; 
+    line-height: 1.6; 
+}
+
+.table-title { 
+    font-size: 20px; 
+    font-weight: 600; 
+    color: #222; 
+    margin-bottom: 18px; 
+    border-left: 5px solid #ff5722; 
+    padding-left: 14px; 
+}
+.announce-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 10px; 
+}
+.announce-table th, .announce-table td { 
+    padding: 16px 20px; 
+    text-align: left; 
+    font-size: 15px; 
+    border-bottom: 1px solid #e5e5e5; 
+}
+.announce-table th { 
+    background: #3b3a39; 
+    color: #fff; 
+    font-weight: 500; 
+}
+.announce-table tr:hover { 
+    background: #fafafa; 
+}
+.badge-round { 
+    display: inline-block; 
+    background: #ede7f6; 
+    color: #512da8; 
+    padding: 4px 10px; 
+    border-radius: 4px; 
+    font-size: 13px; 
+    font-weight: 500; 
+}
+.btn-download { 
+    display: inline-block; 
+    background: #8c3826; 
+    color: #fff; 
+    text-decoration: none; 
+    padding: 6px 16px; 
+    border-radius: 4px; 
+    font-size: 13.5px; 
+    transition: .2s; 
+}
+.btn-download:hover { 
+    background: #6b2819; 
+}

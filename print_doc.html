@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>พิมพ์เอกสารใบสมัคร - มจพ.</title>
+    <link href="style\language.css" rel="stylesheet">
+    <link href="style\base.css" rel="stylesheet">
+    <link href="style\print_doc.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <img src="image/header_1.png" alt="Header KMUTNB" class="layout-img">
+
+        <!-- แถบเมนูหลัก: Active ที่ พิมพ์เอกสาร -->
+        <nav class="main-nav">
+            <a href="index.html">หน้าแรก</a>
+            <a href="announcement.html">ประกาศรายชื่อ <span class="dropdown-icon">▼</span></a>
+            <a href="scholarship.html">ทุนการศึกษา <span class="dropdown-icon">▼</span></a>
+            <a href="print_doc.html" class="active">พิมพ์เอกสาร <span class="dropdown-icon">▼</span></a>
+            <a href="contact.html">ติดต่อสอบถาม</a>
+        </nav>
+
+        <img src="image/header_2_register.png" alt="Banner Apply" class="layout-img">
+
+        <nav class="sub-nav">
+            <a href="index.html">ข่าวการรับสมัคร</a>
+            <a href="courses.html">กรอกใบสมัคร</a>
+            <a href="qualification.html">ตรวจสอบคุณวุฒิ</a>
+            <a href="curriculum.html">หลักสูตรการศึกษา</a>
+            <a href="schedule.html">กำหนดการรับนักศึกษาใหม่</a>
+        </nav>
+
+        <div class="doc-wrapper">
+            <!-- ปุ่มสั่งพิมพ์ -->
+            <div class="action-bar">
+                <button class="btn-print" onclick="window.print()">🖨️ สั่งพิมพ์ใบสมัคร / บันทึก PDF</button>
+            </div>
+
+            <!-- หน้าเอกสารที่จำลองออกมา -->
+            <div class="paper-sheet" id="printable-area">
+                <div class="doc-header">
+                    <h2>ใบสมัครคัดเลือกเข้าศึกษาต่อ ประจำปีการศึกษา 2570</h2>
+                    <p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</p>
+                </div>
+
+                <div class="doc-section-title">สาขาวิชาที่เลือกสมัคร</div>
+                <div class="info-grid full">
+                    <div class="info-item"><span class="info-label">คณะที่สมัคร:</span><span class="info-value" id="val-faculty">-</span></div>
+                    <div class="info-item"><span class="info-label">อันดับ 1:</span><span class="info-value" id="val-major1">-</span></div>
+                    <div class="info-item"><span class="info-label">อันดับ 2:</span><span class="info-value" id="val-major2">-</span></div>
+                    <div class="info-item"><span class="info-label">อันดับ 3:</span><span class="info-value" id="val-major3">-</span></div>
+                </div>
+
+                <div class="doc-section-title">ข้อมูลส่วนตัวผู้สมัคร</div>
+                <div class="info-grid">
+                    <div class="info-item"><span class="info-label">ชื่อ - นามสกุล:</span><span class="info-value" id="val-fullname">-</span></div>
+                    <div class="info-item"><span class="info-label">เลขบัตรประชาชน:</span><span class="info-value" id="val-idcard">-</span></div>
+                    <div class="info-item"><span class="info-label">วัน/เดือน/ปีเกิด:</span><span class="info-value" id="val-birthday">-</span></div>
+                    <div class="info-item"><span class="info-label">อายุ:</span><span class="info-value" id="val-age">-</span></div>
+                    <div class="info-item"><span class="info-label">สัญชาติ / ศาสนา:</span><span class="info-value" id="val-nation-religion">-</span></div>
+                    <div class="info-item"><span class="info-label">วุฒิที่ใช้สมัคร:</span><span class="info-value" id="val-degree-applied">-</span></div>
+                    <div class="info-item"><span class="info-label">เบอร์โทรศัพท์:</span><span class="info-value" id="val-phone">-</span></div>
+                </div>
+
+                <div class="doc-section-title">ประวัติการศึกษาเดิม</div>
+                <div class="info-grid">
+                    <div class="info-item"><span class="info-label">สถานศึกษาเดิม:</span><span class="info-value" id="val-school">-</span></div>
+                    <div class="info-item"><span class="info-label">เกรดเฉลี่ย (GPA):</span><span class="info-value" id="val-gpa">-</span></div>
+                    <div class="info-item"><span class="info-label">สาขาวิชาเดิม:</span><span class="info-value" id="val-old-major">-</span></div>
+                </div>
+
+                <div class="doc-section-title">ข้อมูลผู้ปกครอง</div>
+                <div class="info-grid">
+                    <div class="info-item"><span class="info-label">ชื่อผู้ปกครอง:</span><span class="info-value" id="val-parent-name">-</span></div>
+                    <div class="info-item"><span class="info-label">ความสัมพันธ์:</span><span class="info-value" id="val-parent-rel">-</span></div>
+                    <div class="info-item"><span class="info-label">เบอร์โทรติดต่อ:</span><span class="info-value" id="val-parent-phone">-</span></div>
+                </div>
+
+                <div class="signature-area">
+                    <div class="signature-box">
+                        <br><br>
+                        ลงชื่อ.......................................................ผู้สมัคร<br>
+                        ( <span id="val-sig-name">.......................................................</span> )<br>
+                        วันที่........../........../..........
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="image/footer.png" alt="Footer Contact" class="layout-img">
+    </div>
+
+    <!-- ดึงข้อมูลจาก LocalStorage มาแสดงผล -->
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const data = JSON.parse(localStorage.getItem("admissionFormData") || "{}");
+
+            // แสดงสาขา
+            document.getElementById("val-faculty").textContent = data.faculty || "คณะวิศวกรรมศาสตร์ / เทคโนโลยี";
+            document.getElementById("val-major1").textContent = data.major1 || "ไม่ได้ระบุ";
+            document.getElementById("val-major2").textContent = data.major2 || "ไม่ได้ระบุ";
+            document.getElementById("val-major3").textContent = data.major3 || "ไม่ได้ระบุ";
+
+            // แสดงข้อมูลส่วนตัว
+            const fname = data.fname || "";
+            const lname = data.lname || "";
+            const fullname = (fname || lname) ? `${fname} ${lname}` : "นางสาว สมหญิง (ข้อมูลตัวอย่าง)";
+            document.getElementById("val-fullname").textContent = fullname;
+            document.getElementById("val-sig-name").textContent = fullname;
+
+            document.getElementById("val-idcard").textContent = data.idCard || "-";
+            document.getElementById("val-birthday").textContent = data.birthday || "-";
+            document.getElementById("val-age").textContent = data.age ? `${data.age} ปี` : "-";
+            document.getElementById("val-nation-religion").textContent = `${data.nation || "-"} / ${data.religion || "-"}`;
+            document.getElementById("val-degree-applied").textContent = data.degreeApplied || "-";
+            document.getElementById("val-phone").textContent = data.phone || "-";
+
+            // ข้อมูลการศึกษา
+            document.getElementById("val-school").textContent = data.school || "-";
+            document.getElementById("val-gpa").textContent = data.gpa || "-";
+            document.getElementById("val-old-major").textContent = data.oldMajor || "-";
+
+            // ผู้ปกครอง
+            document.getElementById("val-parent-name").textContent = `${data.p_fname || "-"} ${data.p_lname || ""}`;
+            document.getElementById("val-parent-rel").textContent = data.p_rel || "บิดา / มารดา";
+            document.getElementById("val-parent-phone").textContent = data.p_phone || "-";
+        });
+    </script>
+</body>
+</html>

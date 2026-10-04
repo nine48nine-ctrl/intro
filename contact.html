@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อสอบถาม - มจพ.</title>
+    <link href="style/language.css" rel="stylesheet">
+    <link href="style/base.css" rel="stylesheet">
+    <link href="style/language.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <img src="image/header_1.png" alt="Header KMUTNB" class="layout-img">
+
+        <!-- แถบเมนูหลัก: Active ที่ ติดต่อสอบถาม -->
+<nav class="main-nav">
+    <a href="index.html">หน้าแรก</a>
+    <a href="announcement.html">ประกาศรายชื่อ <span class="dropdown-icon">▼</span></a>
+    <a href="scholarship.html">ทุนการศึกษา <span class="dropdown-icon">▼</span></a>
+    <a href="print_doc.html">พิมพ์เอกสาร <span class="dropdown-icon">▼</span></a>
+    <a href="contact.html">ติดต่อสอบถาม</a>
+</nav>
+
+        <img src="image/header_2_register.png" alt="Banner Apply" class="layout-img">
+
+        <nav class="sub-nav">
+            <a href="index.html">ข่าวการรับสมัคร</a>
+            <a href="courses.html">กรอกใบสมัคร</a>
+            <a href="qualification.html">ตรวจสอบคุณวุฒิ</a>
+            <a href="curriculum.html">หลักสูตรการศึกษา</a>
+            <a href="schedule.html">กำหนดการรับนักศึกษาใหม่</a>
+        </nav>
+
+        <div class="content-area">
+            <div class="section-header">
+                <h1>ติดต่อสอบถามข้อมูลการรับสมัคร</h1>
+                <p>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (มจพ.)</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- รายละเอียดสถานที่และเบอร์โทรตามข้อมูลจริง -->
+                <div class="contact-info-card">
+                    <div class="info-title">กลุ่มงานรับเข้าศึกษา</div>
+                    
+                    <div class="info-item">
+                        <strong>📍 ที่อยู่สำนักงาน:</strong>
+                        กลุ่มงานรับเข้าศึกษา กองบริการการศึกษา สำนักงานอธิการบดี ชั้น 2 อาคาร TGGS<br>
+                        มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ<br>
+                        1518 ถนนประชาราษฎร์ 1 แขวงวงศ์สว่าง เขตบางซื่อ กรุงเทพฯ 10800
+                    </div>
+
+                    <div class="info-item">
+                        <strong>📞 เบอร์โทรศัพท์:</strong>
+                        +66 2 555-2000 ต่อ 1626, 1627<br>
+                        +66 2 555-2171
+                    </div>
+
+                    <div class="info-item">
+                        <strong>⏰ เวลาทำการ:</strong>
+                        วันจันทร์ – วันศุกร์ เวลา 08:30 – 16:30 น. (เว้นวันหยุดราชการ)
+                    </div>
+
+                    <div class="fb-box">
+                        <div class="fb-icon">🌐</div>
+                        <div class="fb-text">
+                            <span style="font-size: 13px; color: #666; display: block;">หรือติดต่อเราได้ที่ Facebook:</span>
+                            <a href="https://facebook.com" target="_blank">Facebook: Admission.KMUTNB - กลุ่มงานรับเข้าศึกษา มจพ.</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- กล่องแบบฟอร์มส่งข้อความสอบถาม -->
+                <div class="contact-form-card">
+                    <div style="font-size: 18px; font-weight: 600; margin-bottom: 20px; color: #222;">ฝากข้อความสอบถาม</div>
+                    <form onsubmit="event.preventDefault(); alert('ส่งข้อความเรียบร้อยแล้วค่ะ เจ้าหน้าที่จะติดต่อกลับโดยเร็วที่สุด'); this.reset();">
+                        <div class="form-group">
+                            <label>ชื่อ - นามสกุล ผู้สอบถาม</label>
+                            <input type="text" required placeholder="กรอกชื่อ-นามสกุล">
+                        </div>
+                        <div class="form-group">
+                            <label>เบอร์โทรศัพท์ที่ติดต่อได้</label>
+                            <input type="text" required placeholder="กรอกเบอร์โทรศัพท์">
+                        </div>
+                        <div class="form-group">
+                            <label>เรื่องที่ต้องการสอบถาม</label>
+                            <input type="text" required placeholder="เช่น สอบถามการเทียบโอน, ค่าเทอม">
+                        </div>
+                        <div class="form-group">
+                            <label>ข้อความ / รายละเอียด</label>
+                            <textarea rows="4" required placeholder="กรอกรายละเอียดข้อความ..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-send">ส่งข้อความ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <img src="image/footer.png" alt="Footer Contact" class="layout-img">
+    </div>
+
+</body>
+</html>

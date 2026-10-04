@@ -1,0 +1,560 @@
+
+
+/* ===== apply_form ===== */
+/* พื้นขาว ไม่มีเงา: ใช้ได้เฉพาะหน้าที่ใส่ <body class="page-apply"> */
+.page-apply { 
+    background: #fff; 
+}
+.page-apply .container { 
+    box-shadow: none; 
+}
+
+/* เนื้อหาฟอร์ม */
+.form-wrapper { 
+    padding: 40px 20px 60px; 
+    background-color: #ffffff; 
+    width: 100%; 
+}
+.form-header-title { 
+    text-align: center; 
+    font-size: 24px; 
+    font-weight: 600; 
+    color: #0b45a3; 
+    text-decoration: underline; 
+    margin-bottom: 8px; 
+}
+
+.form-date { 
+    text-align: center; 
+    font-size: 15px; 
+    font-weight: 500; 
+    color: #111; 
+    margin-bottom: 25px; 
+}
+
+/* การ์ดกรอบมน */
+.form-card { 
+    border: 1px solid #bbb; 
+    border-radius: 16px; 
+    padding: 35px 45px; 
+    background-color: #fafafa; 
+    max-width: 950px; 
+    margin: 0 auto; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+}
+
+.form-section-title { 
+    font-size: 18px; 
+    font-weight: 600; 
+    color: #0b45a3; 
+    margin-top: 25px; 
+    margin-bottom: 14px; 
+    border-bottom: 2px solid #e0e0e0; 
+    padding-bottom: 4px; 
+}
+
+.field { 
+    margin-bottom: 14px; 
+}
+.field label { 
+    display: block; 
+    font-size: 13px; 
+    color: #333; 
+    margin-bottom: 4px; 
+}
+
+.form-card input[type="text"], .form-card select { 
+    width: 100%; 
+    height: 36px; 
+    background-color: #ffffff; 
+    border: 1px solid #cccccc; 
+    border-radius: 4px; 
+    padding: 4px 10px; 
+    font-family: 'Kanit', sans-serif; 
+    font-size: 14px; 
+    outline: none; 
+    transition: .2s; 
+}
+
+.form-card input[type="text"]:focus, .form-card select:focus { 
+    border-color: #0b45a3; 
+    background-color: #f7faff; 
+}
+
+.form-row { 
+    display: flex; 
+    gap: 15px; 
+    margin-bottom: 12px; 
+}
+.col { 
+    flex: 1; 
+}
+
+/* เลขบัตร 13 ช่อง */
+.id-card-inputs { 
+    display: flex; 
+    gap: 6px; 
+    flex-wrap: wrap; 
+}
+.form-card .id-card-inputs input { 
+    width: 32px; 
+    height: 36px; 
+    text-align: center; 
+    padding: 0; 
+}
+
+.btn-group { 
+    display: flex; 
+    justify-content: center; 
+    gap: 40px; 
+    margin-top: 35px; 
+    margin-bottom: 20px; 
+}
+.btn { 
+    width: 140px; 
+    padding: 10px 0; 
+    font-size: 16px; 
+    font-family: 'Kanit', sans-serif; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    text-align: center; 
+    text-decoration: none; 
+    color: #333; 
+    background-color: #e0e0e0; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15); 
+    transition: .2s; 
+}
+
+.btn:hover { 
+    background-color: #d0d0d0; 
+}
+.btn-blue { 
+    background-color: #0b45a3; 
+    color: #ffffff; 
+}
+.btn-blue:hover { 
+    background-color: #08337a; 
+}
+
+/* ===== curriculum ===== */
+/* --- โครงสร้างซ้าย-ขวา --- */
+.split-layout { 
+    display: flex; 
+    min-height: 700px; 
+    background-color: #ffffff; 
+    width: 100%; 
+}
+
+/* แถบเมนูซ้าย */
+.sidebar { 
+    flex: 0 0 28%; 
+    padding: 40px 30px; 
+    border-right: 1px solid #e0e0e0; 
+    background-color: #fafafa; 
+}
+.sidebar h2 { 
+    font-size: 19px; 
+    color: #333; 
+    margin-top: 0; 
+    margin-bottom: 20px; 
+}
+.degree-group-title { 
+    font-weight: 600; 
+    font-size: 15.5px; 
+    color: #e65c00; 
+    margin-top: 25px; 
+    margin-bottom: 12px; 
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 6px; 
+}
+
+.menu-btn { 
+    display: block; 
+    width: 100%; 
+    text-align: left; 
+    padding: 12px 18px; 
+    margin-bottom: 8px; 
+    border: none; 
+    background: transparent; 
+    font-family: 'Kanit', sans-serif; 
+    font-size: 14.5px; 
+    color: #555; 
+    cursor: pointer; 
+    border-radius: 6px; 
+    transition: .2s; 
+}
+
+.menu-btn:hover { 
+    background-color: #e9e9e9; 
+    color: #000; 
+}
+.menu-btn.active { 
+    background-color: #e65c00; 
+    color: #ffffff; 
+    font-weight: 500; 
+}
+
+/* พื้นที่แสดงผลขวา */
+.content-panel { 
+    flex: 1; 
+    padding: 40px; 
+    background-color: #ffffff; 
+    position: relative; 
+    overflow-x: auto; 
+}
+
+.default-msg { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100%; 
+    color: #888; 
+    text-align: center; 
+}
+.default-msg h1 { 
+    font-size: 26px; 
+    color: #333; 
+    margin-bottom: 12px; 
+}
+
+.info-box { 
+    display: none; 
+    animation: fadeIn 0.4s ease-in-out; 
+}
+.info-box.active { 
+    display: block; 
+}
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+.cur-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-bottom: 25px; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+.cur-table th, .cur-table td { 
+    padding: 14px 20px; 
+    border: 1px solid #ddd; 
+    font-size: 14.5px; 
+}
+.cur-table th { 
+    width: 28%; 
+    font-weight: 600; 
+    background-color: #f4f4f4; 
+    color: #333; 
+    text-align: left; 
+}
+.cur-table td { 
+    background-color: #ffffff; 
+    color: #444; 
+    line-height: 1.6; 
+}
+.cur-header { 
+    font-size: 19px; 
+    font-weight: 600; 
+    padding: 16px 22px; 
+    color: #fff; 
+    background-color: #333; 
+}
+
+.highlight-req { 
+    color: #d94a28; 
+    font-weight: 600; 
+    font-size: 15px; 
+    margin-bottom: 4px; 
+}
+.fee-tag { 
+    display: inline-block; 
+    background-color: #e2e2e2; 
+    padding: 4px 10px; 
+    border-radius: 4px; 
+    font-weight: 500; 
+    margin-top: 6px; 
+}
+
+/* --- สไตล์ตารางแผนภูมิหลักสูตร IT (Curriculum Grid) --- */
+.curriculum-flow-container { 
+    margin-top: 25px; 
+    background: #ffffff; 
+    border: 1px solid #dcdcdc; 
+    border-radius: 8px; padding: 25px; 
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06); 
+    overflow-x: auto;
+ }
+.flow-header { 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+.flow-header h3 { 
+    font-size: 19px; 
+    color: #1a3c6d; 
+    margin: 0 0 6px 0; 
+    font-weight: 600; 
+}
+.flow-header span { 
+    font-size: 13.5px; 
+    color: #777; 
+}
+
+.flow-grid-table { 
+    width: 100%; 
+    border-collapse: separate; 
+    border-spacing: 10px 12px; 
+    min-width: 950px; 
+}
+.year-th { 
+    background-color: #f0f4f9; 
+    color: #1a3c6d; 
+    font-size: 15px; 
+    font-weight: 600; 
+    padding: 10px; 
+    border-radius: 6px; 
+    border: 1px solid #d0dbe5; 
+    text-align: center; 
+}
+.term-th { 
+    background-color: #f9f9f9; 
+    color: #444; 
+    font-size: 13.5px; 
+    font-weight: 500; 
+    padding: 6px; 
+    border-radius: 4px; 
+    border: 1px solid #e5e5e5; 
+    text-align: center; 
+}
+.course-card { 
+    background: #ffffff; 
+    border: 1px solid #cfd8dc; 
+    border-radius: 6px; 
+    padding: 8px 10px; 
+    font-size: 12.5px; 
+    line-height: 1.4; 
+    height: 64px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    transition: all .2s; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.03); 
+}
+.course-card:hover { 
+    border-color: #0b45a3; 
+    background-color: #f3f7fd; 
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08); 
+}
+.course-card .c-top { 
+    display: flex; 
+    justify-content: space-between; 
+    font-size: 11px; 
+    color: #666; 
+    margin-bottom: 2px; 
+    font-weight: 500; 
+}
+.course-card .c-name { 
+    font-weight: 500; 
+    color: #222; 
+}
+.credit-badge { 
+    background-color: #eceff1; 
+    color: #37474f; 
+    padding: 6px; 
+    border-radius: 20px; 
+    text-align: center; 
+    font-weight: 600; 
+    font-size: 12.5px; 
+    border: 1px solid #cfd8dc; 
+}
+.total-badge-row { 
+    margin-top: 15px; 
+    background-color: #e8f0fe; 
+    border: 1.5px solid #b6d4fe; 
+    color: #0b45a3; 
+    padding: 10px; 
+    border-radius: 6px; 
+    text-align: center; 
+    font-weight: 600; 
+    font-size: 15px; 
+}
+
+/* ===== qualification ===== */
+/* --- โครงสร้างเนื้อหา --- */
+.content-wrap { 
+    padding: 40px 40px 60px; 
+    background-color: #ffffff; 
+}
+.page-title { 
+    text-align: center; 
+    font-size: 26px; 
+    font-weight: 600; 
+    color: #000; 
+    margin-bottom: 30px; 
+}
+.section-title { 
+    font-size: 20px; 
+    font-weight: 600; 
+    color: #333; 
+    margin-top: 40px; 
+    margin-bottom: 15px; 
+    border-left: 5px solid #e65c00; 
+    padding-left: 10px; 
+}
+
+/* --- สไตล์ตารางค่าใช้จ่าย (Fee Tables) --- */
+.fee-card { 
+    margin-bottom: 30px; 
+    border: 1px solid #e0e0e0; 
+    padding: 20px; 
+    background-color: #fff; 
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05); 
+    border-radius: 8px; 
+}
+.fee-title { 
+    text-align: center; 
+    font-size: 20px; 
+    font-weight: 600; 
+    margin-bottom: 15px; 
+}
+.fee-table { 
+    width: 100%; 
+    border-collapse: separate; 
+    border-spacing: 4px; 
+}
+.fee-table th, .fee-table td { 
+    text-align: center; 
+    padding: 8px; 
+    font-size: 14px; 
+    border-radius: 4px; 
+}
+
+.fee-title.brown { 
+    color: #6b2819; 
+}
+.th-brown { 
+    background-color: #4a4947; 
+    color: #fff; 
+    font-weight: 500; 
+}
+.td-label.brown { 
+    background-color: #3b3a39; 
+    color: #fff; 
+    text-align: right; 
+    padding-right: 15px; 
+}
+.td-val.brown { 
+    background-color: #8c3826; 
+    color: #fff; 
+}
+.td-sum.brown { 
+    background-color: #6d1b0b; 
+    color: #fff; 
+    font-weight: 600; 
+}
+
+.fee-title.blue { 
+    color: #007bc0; 
+}
+.th-blue { 
+    background-color: #413d36; 
+    color: #fff; 
+    font-weight: 500; 
+}
+.td-label.blue { 
+    background-color: #312d27; 
+    color: #fff; 
+    text-align: right; 
+    padding-right: 15px; 
+}
+.td-val.blue { 
+    background-color: #008cd2; 
+    color: #fff; 
+}
+.td-sum.blue { 
+    background-color: #006096; 
+    color: #fff; 
+    font-weight: 600; 
+}
+
+.fee-title.green { 
+    color: #1a7a3e; 
+}
+.th-green { 
+    background-color: #3f362e; 
+    color: #fff; 
+    font-weight: 500; 
+}
+.td-label.green { 
+    background-color: #2b231d; 
+    color: #fff; 
+    text-align: right; 
+    padding-right: 15px; 
+}
+.td-val.green { 
+    background-color: #117a35; 
+    color: #fff; 
+}
+.td-sum.green { 
+    background-color: #0a4f21; 
+    color: #fff; 
+    font-weight: 600; 
+}
+
+/* --- สไตล์ตารางข้อมูลหลักสูตร (Program Info Tables) --- */
+.qual-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-bottom: 30px; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+}
+.qual-table th, .qual-table td { 
+    padding: 15px 20px; 
+    border: 1px solid #ddd; 
+    font-size: 15px; 
+}
+.qual-table th { 
+    width: 25%; 
+    font-weight: 600; 
+    color: #fff; 
+    text-align: right; 
+}
+.qual-table td { 
+    background-color: #fafafa; 
+    color: #333; 
+    line-height: 1.6;
+}
+.qual-header { 
+    font-size: 22px; 
+    font-weight: 600; 
+    padding: 15px; 
+    color: #fff; 
+    text-align: center; 
+}
+
+.qual-title { 
+    font-weight: 600; 
+    font-size: 16px; 
+    margin-bottom: 5px; 
+    color: #111; 
+}
+
+/* ===== สีประจำสาขา (สีเดียวกันรวมเป็นกฎเดียว สีที่ต่างกันแยกกฎ) ===== */
+.cur-theme-ine .cur-header, .qual-theme-ine th, .qual-theme-ine .qual-header { background-color: #216cb4; }
+.cur-theme-iem .cur-header, .qual-theme-iem th, .qual-theme-iem .qual-header { background-color: #1a3c6d; }
+.cur-theme-mm .cur-header, .qual-theme-mm th, .qual-theme-mm .qual-header { background-color: #0f5a2e; }
+.cur-theme-inet .cur-header, .qual-theme-inet th, .qual-theme-inet .qual-header { background-color: #021842; }
+
+/* IT: สองหน้าใช้สีต่างกัน */
+.cur-theme-it .cur-header { background-color: #0d47a1; }
+.qual-theme-it th, .qual-theme-it .qual-header { background-color: #0b1c4a; }
+
+/* เฉพาะหน้าคุณวุฒิ */
+.qual-theme-iti th, .qual-theme-iti .qual-header { background-color: #e31837; }
+.qual-theme-itt th, .qual-theme-itt .qual-header { background-color: #c93b32; }
+.qual-theme-mmt th, .qual-theme-mmt .qual-header { background-color: #003380; }
+.qual-theme-afet th, .qual-theme-afet .qual-header { background-color: #3b5212; }
+.qual-theme-imt th, .qual-theme-imt .qual-header { background-color: #0d5f6d; }
+.qual-theme-ca th, .qual-theme-ca .qual-header { background-color: #e45b4c; }
+.qual-theme-afe th, .qual-theme-afe .qual-header { background-color: #d94a28; }

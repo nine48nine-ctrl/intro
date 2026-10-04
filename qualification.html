@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตรวจสอบคุณวุฒิ - มจพ.</title>
+    <link href="style\language.css" rel="stylesheet">
+    <link href="style\base.css" rel="stylesheet">
+    <link href="style\admission.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <!-- ภาพเฮดเดอร์ด้านบน -->
+        <img src="image/header_1.png" alt="Header KMUTNB">
+
+        <!-- แถบเมนูหลัก -->
+<nav class="main-nav">
+    <a href="index.html">หน้าแรก</a>
+    <a href="announcement.html">ประกาศรายชื่อ <span class="dropdown-icon">▼</span></a>
+    <a href="scholarship.html">ทุนการศึกษา <span class="dropdown-icon">▼</span></a>
+    <a href="print_doc.html">พิมพ์เอกสาร <span class="dropdown-icon">▼</span></a>
+    <a href="contact.html">ติดต่อสอบถาม</a>
+</nav>
+        <img src="image/header_2_register.png" alt="Banner Apply">
+
+        <!-- แถบเมนูย่อย -->
+<!-- อัปเดตเมนูส่วนนี้ในทุกๆ ไฟล์ -->
+<nav class="sub-nav">
+    <!-- หน้าไหนคือไฟล์ปัจจุบัน ให้ใส่ class="active" ที่หน้านั้น -->
+    <a href="index.html">ข่าวการรับสมัคร</a>
+    <a href="courses.html">กรอกใบสมัคร</a>
+    <a href="qualification.html">ตรวจสอบคุณวุฒิ</a>
+    <a href="curriculum.html">หลักสูตรการศึกษา</a>
+    <a href="schedule.html" >กำหนดการรับนักศึกษาใหม่</a>
+</nav>
+
+        <div class="content-wrap">
+            <div class="page-title">ตรวจสอบคุณวุฒิและข้อมูลหลักสูตร</div>
+
+            <!-- ================= ส่วนที่ 1: ตารางค่าใช้จ่าย ================= -->
+            <div class="section-title">ตารางค่าใช้จ่ายในการศึกษา</div>
+
+            <!-- ตาราง 4 ปี (IEM, INE) -->
+            <div class="fee-card">
+                <div class="fee-title blue">หลักสูตร 4 ปี เสริมทักษะภาษาอังกฤษ : IEM, INE</div>
+                <table class="fee-table">
+                    <tr>
+                        <td></td>
+                        <td colspan="2" class="th-blue">ปี 1</td>
+                        <td colspan="2" class="th-blue">ปี 2</td>
+                        <td colspan="2" class="th-blue">ปี 3</td>
+                        <td colspan="2" class="th-blue">ปี 4</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="th-blue">เทอม 1</td><td class="th-blue">เทอม 2</td>
+                        <td class="th-blue">เทอม 1</td><td class="th-blue">เทอม 2</td>
+                        <td class="th-blue">เทอม 1</td><td class="th-blue">เทอม 2</td>
+                        <td class="th-blue">เทอม 1</td><td class="th-blue">เทอม 2</td>
+                    </tr>
+                    <tr>
+                        <td class="td-label blue">ค่าบำรุงการศึกษา</td>
+                        <td class="td-val blue">25,000.00</td><td class="td-val blue">25,000.00</td>
+                        <td class="td-val blue">25,000.00</td><td class="td-val blue">25,000.00</td>
+                        <td class="td-val blue">25,000.00</td><td class="td-val blue">25,000.00</td>
+                        <td class="td-val blue">25,000.00</td><td class="td-val blue">25,000.00</td>
+                    </tr>
+                    <tr>
+                        <td class="td-label blue">ค่าประกันอุบัติเหตุ</td>
+                        <td class="td-val blue">350.00</td><td></td>
+                        <td class="td-val blue">350.00</td><td></td>
+                        <td class="td-val blue">350.00</td><td></td>
+                        <td class="td-val blue">350.00</td><td></td>
+                    </tr>
+                    <tr>
+                        <td class="td-label blue">ค่าประกันทรัพย์สินเสียหาย</td><td class="td-val blue">1,000.00</td><td colspan="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-label blue">ค่าขึ้นทะเบียนนักศึกษาใหม่</td><td class="td-val blue">1,000.00</td><td colspan="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-label blue">ค่าบัตรประจำตัวนักศึกษา</td><td class="td-val blue">200.00</td><td colspan="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-label blue" style="font-weight:600;">รวมค่าบำรุงและค่าธรรมเนียม</td>
+                        <td class="td-sum blue">27,550.00</td><td class="td-sum blue">25,000.00</td>
+                        <td class="td-sum blue">25,350.00</td><td class="td-sum blue">25,000.00</td>
+                        <td class="td-sum blue">25,350.00</td><td class="td-sum blue">25,000.00</td>
+                        <td class="td-sum blue">25,350.00</td><td class="td-sum blue">25,000.00</td>
+                    </tr>
+                    <tr>
+                        <td class="td-label blue" style="font-weight:600;">รวมตลอดการศึกษา</td>
+                        <td colspan="8" class="td-sum blue" style="text-align:center;">THB 203,600.00</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- ตาราง 3 ปี (INET) -->
+            <div class="fee-card">
+                <div class="fee-title brown">หลักสูตรต่อเนื่อง 3 ปี เสริมทักษะภาษาอังกฤษ : INET</div>
+                <table class="fee-table">
+                    <tr>
+                        <td></td>
+                        <td colspan="2" class="th-brown">ปี 1</td><td colspan="2" class="th-brown">ปี 2</td><td colspan="2" class="th-brown">ปี 3</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="th-brown">เทอม 1</td><td class="th-brown">เทอม 2</td>
+                        <td class="th-brown">เทอม 1</td><td class="th-brown">เทอม 2</td>
+                        <td class="th-brown">เทอม 1</td><td class="th-brown">เทอม 2</td>
+                    </tr>
+                    <tr>
+                        <td class="td-label brown">ค่าบำรุงการศึกษา</td>
+                        <td class="td-val brown">25,000.00</td><td class="td-val brown">25,000.00</td>
+                        <td class="td-val brown">25,000.00</td><td class="td-val brown">25,000.00</td>
+                        <td class="td-val brown">25,000.00</td><td class="td-val brown">25,000.00</td>
+                    </tr>
+                    <tr>
+                        <td class="td-label brown">ค่าประกันอุบัติเหตุ</td>
+                        <td class="td-val brown">350.00</td><td></td><td class="td-val brown">350.00</td><td></td><td class="td-val brown">350.00</td><td></td>
+                    </tr>
+                    <tr>
+                        <td class="td-label brown">ค่าประกันทรัพย์สินเสียหาย</td><td class="td-val brown">1,000.00</td><td colspan="5"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-label brown">ค่าขึ้นทะเบียนนักศึกษาใหม่</td><td class="td-val brown">1,000.00</td><td colspan="5"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-label brown">ค่าบัตรประจำตัวนักศึกษา</td><td class="td-val brown">200.00</td><td colspan="5"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-label brown" style="font-weight:600;">รวมค่าบำรุงและค่าธรรมเนียม</td>
+                        <td class="td-sum brown">27,550.00</td><td class="td-sum brown">25,000.00</td>
+                        <td class="td-sum brown">25,350.00</td><td class="td-sum brown">25,000.00</td>
+                        <td class="td-sum brown">25,350.00</td><td class="td-sum brown">25,000.00</td>
+                    </tr>
+                    <tr>
+                        <td class="td-label brown" style="font-weight:600;">รวมตลอดการศึกษา</td>
+                        <td colspan="6" class="td-sum brown" style="text-align:center;">THB 153,250.00</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- ตาราง 2 ปี (ITI, ITT, IMT, MMT, CDM, AFET) -->
+            <div class="fee-card">
+                <div class="fee-title green">หลักสูตรต่อเนื่อง 2 ปี : ITI, ITT, IMT, MMT, CDM, AFET</div>
+                <table class="fee-table">
+                    <tr>
+                        <td></td>
+                        <td colspan="2" class="th-green">ปี 1</td><td colspan="2" class="th-green">ปี 2</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="th-green">เทอม 1</td><td class="th-green">เทอม 2</td>
+                        <td class="th-green">เทอม 1</td><td class="th-green">เทอม 2</td>
+                    </tr>
+                    <tr>
+                        <td class="td-label green">ค่าบำรุงการศึกษา</td>
+                        <td class="td-val green">19,000.00</td><td class="td-val green">19,000.00</td>
+                        <td class="td-val green">19,000.00</td><td class="td-val green">19,000.00</td>
+                    </tr>
+                    <tr>
+                        <td class="td-label green">ค่าประกันอุบัติเหตุ</td>
+                        <td class="td-val green">350.00</td><td></td><td class="td-val green">350.00</td><td></td>
+                    </tr>
+                    <tr>
+                        <td class="td-label green">ค่าประกันทรัพย์สินเสียหาย</td><td class="td-val green">1,000.00</td><td colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-label green">ค่าขึ้นทะเบียนนักศึกษาใหม่</td><td class="td-val green">1,000.00</td><td colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-label green">ค่าบัตรประจำตัวนักศึกษา</td><td class="td-val green">200.00</td><td colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td class="td-label green" style="font-weight:600;">รวมค่าบำรุงและค่าธรรมเนียม</td>
+                        <td class="td-sum green">21,550.00</td><td class="td-sum green">19,000.00</td>
+                        <td class="td-sum green">19,350.00</td><td class="td-sum green">19,000.00</td>
+                    </tr>
+                    <tr>
+                        <td class="td-label green" style="font-weight:600;">รวมตลอดการศึกษา</td>
+                        <td colspan="4" class="td-sum green" style="text-align:center;">THB 78,900.00</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- ================= ส่วนที่ 2: ข้อมูลคุณวุฒิ ================= -->
+            <div class="section-title">ข้อมูลคุณวุฒิและรายละเอียดแต่ละหลักสูตร</div>
+
+            <!-- INET -->
+            <table class="prog-table theme-inet">
+                <tr><td colspan="2" class="prog-header">INET - วิศวกรรมสารสนเทศและเครือข่าย (เทียบโอน 3 ปี)</td></tr>
+                <tr>
+                    <th>รับสมัครผู้มีวุฒิการศึกษา</th>
+                    <td>ปวส. หรือ อนุปริญญา ทุกสาขาวิชา</td>
+                </tr>
+                <tr>
+                    <th>ระยะเวลาและค่าเทอม</th>
+                    <td>
+                        <div class="prog-title">ระยะเวลาศึกษา 3 ปี | ค่าเทอม 25,000 บาท</div>
+                        หลักสูตรเสริมทักษะภาษาอังกฤษ, ฝึกงานกับสถานประกอบการในภาคฤดูร้อน
+                    </td>
+                </tr>
+                <tr>
+                    <th>ทักษะที่ได้รับ</th>
+                    <td>
+                        <ul class="skills-list">
+                            <li>ด้าน Network ฝึกด้วยอุปกรณ์จริงในห้องปฏิบัติการ</li>
+                            <li>ด้านการพัฒนาโปรแกรม Full Stack และ DevOps</li>
+                            <li>ด้าน Information Technology และ Data Science</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>อาชีพหลังสำเร็จการศึกษา</th>
+                    <td>Network Engineer, Cloud Engineer, Site Reliability Engineer, IT Network and Security Engineer, IT Infrastructure Engineer, System Administrator, Network/Back-end/Full Stack Developer, Data Engineer, Machine Learning Engineer</td>
+                </tr>
+            </table>
+
+            <!-- ITI -->
+            <table class="prog-table theme-iti">
+                <tr><td colspan="2" class="prog-header">ITI - เทคโนโลยีสารสนเทศ (ต่อเนื่อง 2 ปี)</td></tr>
+                <tr>
+                    <th>รับสมัครผู้มีวุฒิการศึกษา</th>
+                    <td>ปวส. สาขาวิชาคอมพิวเตอร์ธุรกิจ, เทคโนโลยีธุรกิจดิจิทัล, การพาณิชย์อิเล็กทรอนิกส์, โมบายแอปพลิเคชัน, คอมพิวเตอร์กราฟิก, เทคโนโลยีสารสนเทศและการสื่อสาร, อนุปริญญาทางไฟฟ้าและอิเล็กทรอนิกส์, วิทยาศาสตร์คอมพิวเตอร์ และสาขาที่เกี่ยวข้อง</td>
+                </tr>
+                <tr>
+                    <th>ระยะเวลาและค่าเทอม</th>
+                    <td>
+                        <div class="prog-title">ระยะเวลาศึกษา 2 ปี | ค่าเทอม 19,000 บาท</div>
+                        หลักสูตรปริญญาตรีทางปฏิบัติการ เน้นการฝึกทักษะการเป็นนวัตกร เพื่อเป็นผู้นำในการพัฒนานวัตกรรมด้วยเทคโนโลยีที่ทันสมัย
+                    </td>
+                </tr>
+                <tr>
+                    <th>ทักษะที่ได้รับ</th>
+                    <td>
+                        <ul class="skills-list">
+                            <li>ทักษะทางด้านวิศวกรรมคอมพิวเตอร์</li>
+                            <li>การประยุกต์ใช้ทฤษฎีในการพัฒนานวัตกรรม</li>
+                            <li>การฝึกทักษะในห้องปฏิบัติการและสถานประกอบการ</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>อาชีพหลังสำเร็จการศึกษา</th>
+                    <td>ผู้บริหารไอที, นักพัฒนาโปรแกรม, ผู้ดูแลระบบ, นักวิเคราะห์และออกแบบระบบ, เจ้าของธุรกิจ, นักพัฒนาเว็บไซต์, ผู้ดูแลระบบและอาชีพอื่นๆ ที่เกี่ยวกับเทคโนโลยี</td>
+                </tr>
+            </table>
+
+            <!-- ITT -->
+            <table class="prog-table theme-itt">
+                <tr><td colspan="2" class="prog-header">ITT - เทคโนโลยีสารสนเทศ (เทียบโอน 2 ปี)</td></tr>
+                <tr>
+                    <th>รับสมัครผู้มีวุฒิการศึกษา</th>
+                    <td>ระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.) หรือ อนุปริญญา ทางพาณิชยกรรม บริหารธุรกิจ</td>
+                </tr>
+                <tr>
+                    <th>ระยะเวลาและค่าเทอม</th>
+                    <td>
+                        <div class="prog-title">ระยะเวลาศึกษา 2 ปี | ค่าเทอม 19,000 บาท</div>
+                        หลักสูตรเสริมทักษะภาษาอังกฤษ เน้นศึกษาระบบอัจฉริยะเชิงธุรกิจ โปรแกรมประยุกต์การวางแผนทรัพยากรองค์กร การวิเคราะห์ธุรกิจ
+                    </td>
+                </tr>
+                <tr>
+                    <th>ทักษะที่ได้รับ</th>
+                    <td>
+                        <ul class="skills-list">
+                            <li>การพัฒนาซอฟต์แวร์คอมพิวเตอร์</li>
+                            <li>การออกแบบและพัฒนาเว็บแอปพลิเคชัน</li>
+                            <li>การวิเคราะห์ธุรกิจ</li>
+                            <li>การประยุกต์ใช้ระบบอัจฉริยะเชิงธุรกิจจนสารสนเทศ</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>อาชีพหลังสำเร็จการศึกษา</th>
+                    <td>นักพัฒนาซอฟต์แวร์, นักพัฒนาแอปพลิเคชัน, นักพัฒนาเว็บไซต์, นักออกแบบ UX/UI, นักวิเคราะห์ธุรกิจ</td>
+                </tr>
+            </table>
+
+            <!-- MMT -->
+            <table class="prog-table theme-mmt">
+                <tr><td colspan="2" class="prog-header">MMT - เทคโนโลยีเครื่องกลและกระบวนการผลิต (เทียบโอน 2.5 ปี)</td></tr>
+                <tr>
+                    <th>รับสมัครผู้มีวุฒิการศึกษา</th>
+                    <td>ปวส. กลุ่มช่างอุตสาหกรรมทุกสาขา, เครื่องกล, การผลิต, ช่างยนต์, ไฟฟ้า, ซ่อมบำรุง และสาขาที่เกี่ยวข้อง</td>
+                </tr>
+                <tr>
+                    <th>ระยะเวลาและค่าเทอม</th>
+                    <td>
+                        <div class="prog-title">ระยะเวลาศึกษา 2 ปี ครึ่ง | ค่าเทอม 19,000 บาท</div>
+                        สหกิจศึกษาเทอมสุดท้าย สอบจบที่สถานประกอบการ เพิ่มโอกาสได้ทำงานหลังสำเร็จการศึกษา
+                    </td>
+                </tr>
+                <tr>
+                    <th>ทักษะที่ได้รับ</th>
+                    <td>
+                        <ul class="skills-list">
+                            <li>ด้านปฏิบัติการเทคโนโลยีวิศวกรรมเครื่องกล, กระบวนการผลิต</li>
+                            <li>ด้านการเขียนแบบ, การออกแบบเครื่องจักรกลอุตสาหกรรม</li>
+                            <li>ด้านหุ่นยนต์และระบบควบคุมอัตโนมัติ</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>อาชีพหลังสำเร็จการศึกษา</th>
+                    <td>วิศวกรในโรงงานอุตสาหกรรม เช่น วิศวกรออกแบบเครื่องจักร, วิศวกรควบคุมกระบวนการผลิต, วิศวกรควบคุมคุณภาพ, วิศวกรซ่อมบำรุง, วิศวกรด้านพลังงานและพลังงานทดแทน, รับราชการ และผู้ประกอบการ</td>
+                </tr>
+            </table>
+
+            <!-- AFET -->
+            <table class="prog-table theme-afet">
+                <tr><td colspan="2" class="prog-header">AFET - วิศวกรรมเกษตรและอาหาร (เทียบโอน 3 ปี)</td></tr>
+                <tr>
+                    <th>รับสมัครผู้มีวุฒิการศึกษา</th>
+                    <td>ปวส. กลุ่มช่างอุตสาหกรรมทุกสาขา, ช่างยนต์, เครื่องกล, ซ่อมบำรุง, ช่างเกษตร, คหกรรม, เทคโนโลยีอาหาร และสาขาที่เกี่ยวข้อง</td>
+                </tr>
+                <tr>
+                    <th>ระยะเวลาและค่าเทอม</th>
+                    <td>
+                        <div class="prog-title">ระยะเวลาศึกษา 3 ปี | ค่าเทอม 19,000 บาท</div>
+                        สหกิจศึกษาเทอมสุดท้าย สอบจบที่สถานประกอบการ เพิ่มโอกาสได้ทำงานหลังสำเร็จการศึกษา
+                    </td>
+                </tr>
+                <tr>
+                    <th>ทักษะที่ได้รับ</th>
+                    <td>
+                        <ul class="skills-list">
+                            <li>ด้านวิศวกรรมเครื่องกล, เครื่องจักรกลเกษตร, เครื่องจักรแปรรูปอาหาร</li>
+                            <li>ด้านการเป็นนวัตกร Smart Farm และ Hygienic Design of Food Processing</li>
+                            <li>ด้าน Robot และ Automation System ในอุตสาหกรรมเกษตรและอาหาร</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>อาชีพหลังสำเร็จการศึกษา</th>
+                    <td>วิศวกรในโรงงานอุตสาหกรรม เช่น วิศวกรเครื่องกลเกษตร, วิศวกรฟาร์ม, วิศวกรออกแบบเครื่องจักรแปรรูปอาหาร, วิศวกรการผลิต, วิศวกรซ่อมบำรุง, รับราชการ, ผู้ประกอบการ Young Smart Farmer</td>
+                </tr>
+            </table>
+            
+            <!-- IMT (เพิ่มใหม่) -->
+            <table class="prog-table theme-imt">
+                <tr><td colspan="2" class="prog-header">IMT - การจัดการอุตสาหกรรม (ต่อเนื่อง)[cite: 17]</td></tr>
+                <tr>
+                    <th>รับสมัครผู้มีวุฒิการศึกษา</th>
+                    <td>ปวส. ประเภทวิชาอุตสาหกรรม คอมพิวเตอร์ธุรกิจ เทคโนโลยีธุรกิจดิจิทัล การจัดการโลจิสติกส์ การพาณิชย์อิเล็กทรอนิกส์ บริหารธุรกิจ โมบายแอปพลิเคชันทางธุรกิจ คอมพิวเตอร์กราฟิก เทคโนโลยีสารสนเทศและการสื่อสาร การจัดการผลิตภัณฑ์ เทคโนโลยีสิ่งทอ อนุปริญญา ไฟฟ้าและอิเล็กทรอนิกส์ วัสดุ คอมพิวเตอร์ และวิทยาศาสตร์การแพทย์ หรืออื่น ๆ ที่เกี่ยวข้อง[cite: 17]</td>
+                </tr>
+                <tr>
+                    <th>ระยะเวลาและค่าเทอม</th>
+                    <td>
+                        <div class="prog-title">ระยะเวลาศึกษา 2 ปี | ค่าเทอม 19,000 บาท[cite: 17]</div>
+                        หลักสูตรปริญญาตรีทางการปฏิบัติการ เพื่อฝึกทักษะเป็นวิศวกรที่เชี่ยวชาญทางอุตสาหกรรม[cite: 17]
+                    </td>
+                </tr>
+                <tr>
+                    <th>ทักษะที่ได้รับ</th>
+                    <td>
+                        <ul class="skills-list">
+                            <li>บูรณาการความสามารถทางการจัดการและความรู้ทางอุตสาหกรรม[cite: 17]</li>
+                            <li>กระบวนการการผลิต การควบคุมคุณภาพ อาชีวอนามัยและความปลอดภัย[cite: 17]</li>
+                            <li>การจัดการพลังงาน โลจิสติกส์และห่วงโซ่อุปทาน[cite: 17]</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>อาชีพหลังสำเร็จการศึกษา</th>
+                    <td>วิศวกรกระบวนการผลิต วิศวกรควบคุมคุณภาพ วิศวกรโรงงาน คลังสินค้าและโลจิสติกส์ ผู้จัดการโรงงาน เจ้าของกิจการ[cite: 17]</td>
+                </tr>
+            </table>
+
+            <!-- INE (เพิ่มใหม่) -->
+            <table class="prog-table theme-ine">
+                <tr><td colspan="2" class="prog-header">INE - วิศวกรรมสารสนเทศและเครือข่าย (4 ปี)[cite: 18]</td></tr>
+                <tr>
+                    <th>รับสมัครผู้มีวุฒิการศึกษา</th>
+                    <td>ม.6 ทุกกลุ่มสาระการเรียนรู้ หรือเทียบเท่า ปวช. ทุกสาขาวิชา[cite: 18]</td>
+                </tr>
+                <tr>
+                    <th>ระยะเวลาและค่าเทอม</th>
+                    <td>
+                        <div class="prog-title">ระยะเวลาศึกษา 4 ปี | ค่าเทอม 25,000 บาท[cite: 18]</div>
+                        หลักสูตรเสริมทักษะภาษาอังกฤษ สหกิจศึกษากับสถานประกอบการในเทอมสุดท้าย[cite: 18]
+                    </td>
+                </tr>
+                <tr>
+                    <th>ทักษะที่ได้รับ</th>
+                    <td>
+                        <ul class="skills-list">
+                            <li>ด้าน Network ฝึกด้วยอุปกรณ์จริงในห้องปฏิบัติการ[cite: 18]</li>
+                            <li>ด้านการพัฒนาโปรแกรม Full Stack และ DevOps[cite: 18]</li>
+                            <li>ด้าน Information Technology และ Data Science[cite: 18]</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>อาชีพหลังสำเร็จการศึกษา</th>
+                    <td>Network Engineer / Cloud Engineer / Site Reliability Engineer / IT Network and Security Engineer / IT Infrastructure Engineer / System Administrator, Network Developer / Back-end Developer / Full Stack Developer, Data Engineer / Machine Learning Engineer[cite: 18]</td>
+                </tr>
+            </table>
+
+            <!-- IT (เพิ่มใหม่) -->
+            <table class="prog-table theme-it">
+                <tr><td colspan="2" class="prog-header">IT - เทคโนโลยีสารสนเทศ (4 ปี)[cite: 19]</td></tr>
+                <tr>
+                    <th>รับสมัครผู้มีวุฒิการศึกษา</th>
+                    <td>ม.6 ทุกกลุ่มสาระการเรียนรู้ หรือเทียบเท่า ม.6 / ปวช. ช่างอุตสาหกรรม ไฟฟ้า/อิเล็กทรอนิกส์ คอมพิวเตอร์กราฟิกอาร์ต มัลติมีเดีย แอนิเมชัน พาณิชยการ การบัญชี การตลาด คอมพิวเตอร์ธุรกิจ เทคโนโลยีสารสนเทศ และการสื่อสาร หรือที่เกี่ยวข้อง[cite: 19]</td>
+                </tr>
+                <tr>
+                    <th>ระยะเวลาและค่าเทอม</th>
+                    <td>
+                        <div class="prog-title">ระยะเวลาศึกษา 4 ปี | ค่าเทอม 19,000 บาท[cite: 19]</div>
+                        มีกลุ่มวิชาให้เลือก เน้นศึกษาตามความสนใจทั้งวิศวกรรมซอฟต์แวร์ วิทยาการข้อมูล เทคโนโลยีมัลติมีเดีย การพัฒนาเกม และธุรกิจดิจิทัล ได้ฝึกฝนจากประสบการณ์จริงในรูปแบบสหกิจศึกษา ร่วมกับบริษัทชั้นนำด้านเทคโนโลยีสารสนเทศ[cite: 19]
+                    </td>
+                </tr>
+                <tr>
+                    <th>ทักษะที่ได้รับ</th>
+                    <td>
+                        <ul class="skills-list">
+                            <li>การพัฒนาซอฟต์แวร์คอมพิวเตอร์ แอปพลิเคชันมือถือ ออกแบบเว็บไซต์[cite: 19]</li>
+                            <li>ทักษะด้านปัญญาประดิษฐ์ และวิทยาศาสตร์ข้อมูล[cite: 19]</li>
+                            <li>การพัฒนาเว็บแอปพลิเคชันทั้งหน้าบ้านและหลังบ้าน[cite: 19]</li>
+                            <li>การพัฒนาสื่อมัลติมีเดีย[cite: 19]</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>อาชีพหลังสำเร็จการศึกษา</th>
+                    <td>นักพัฒนาเว็บไซต์ นักพัฒนาซอฟต์แวร์ นักออกแบบและพัฒนาสื่อดิจิทัล นักออกแบบ UX/UI นักวิทยาศาสตร์ข้อมูล นักพัฒนาและออกแบบระบบงาน นักวิเคราะห์ธุรกิจ (Business Analyst)[cite: 19]</td>
+                </tr>
+            </table>
+
+            <!-- CA (เพิ่มใหม่) -->
+            <table class="prog-table theme-ca">
+                <tr><td colspan="2" class="prog-header">CA - คอมพิวเตอร์ช่วยออกแบบและบริหารงานก่อสร้าง (4 ปี)[cite: 20]</td></tr>
+                <tr>
+                    <th>รับสมัครผู้มีวุฒิการศึกษา</th>
+                    <td>ม.6 ทุกกลุ่มสาระ หรือเทียบเท่า ม.6 และ ปวช. ประเภทวิชาอุตสาหกรรม สาขาก่อสร้าง สถาปัตยกรรม ศิลปกรรม วิจิตรศิลป์ การออกแบบ เทคโนโลยีศิลปกรรม คอมพิวเตอร์กราฟิก เทคโนโลยีสารสนเทศและการสื่อสาร[cite: 20]</td>
+                </tr>
+                <tr>
+                    <th>ระยะเวลาและค่าเทอม</th>
+                    <td>
+                        <div class="prog-title">ระยะเวลาศึกษา 4 ปี | ค่าเทอม 19,000 บาท[cite: 20]</div>
+                        แขนงบริหารงานก่อสร้าง และแขนงคอมพิวเตอร์ช่วยงานสถาปัตย์ มีการฝึกปฏิบัติงานสหกิจศึกษา สามารถใช้ทักษะความรู้ในการทำงานที่ครอบคลุมทุกขั้นตอนของโครงการก่อสร้าง เป็นที่ต้องการสูงและตอบสนองยุคดิจิทัล[cite: 20]
+                    </td>
+                </tr>
+                <tr>
+                    <th>ทักษะที่ได้รับ</th>
+                    <td>
+                        <ul class="skills-list">
+                            <li>ทักษะด้านสถาปัตยกรรมและวิศวกรรมก่อสร้าง[cite: 20]</li>
+                            <li>ทักษะด้านการบริหารงาน ทักษะด้านการทำงานเป็นทีม[cite: 20]</li>
+                            <li>ทักษะคอมพิวเตอร์ด้านการออกแบบและบริหารงานก่อสร้าง[cite: 20]</li>
+                            <li>ทักษะด้าน CAD/BIM ในงานสถาปัตยกรรม และวิศวกรรมก่อสร้าง[cite: 20]</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>อาชีพหลังสำเร็จการศึกษา</th>
+                    <td>ผู้ควบคุมการก่อสร้าง ผู้รับเหมาก่อสร้าง ผู้ช่วยวิศวกร: สนาม/สำนักงาน ผู้สำรวจปริมาณและราคางาน(QS) ผู้ประสานงานโครงการ ผู้ช่วยออกแบบงานสถาปัตยกรรม นักเขียนแบบ (2D/3D/BIM) งานราชการ: นักจัดการโยธา/นักบริหารงานช่าง หรืออาชีพที่เกี่ยวข้องกับงานก่อสร้างอื่น ๆ[cite: 20]</td>
+                </tr>
+            </table>
+
+            <!-- IEM (เพิ่มใหม่) -->
+            <table class="prog-table theme-iem">
+                <tr><td colspan="2" class="prog-header">IEM - วิศวกรรมอุตสาหการและการจัดการ (4 ปี)[cite: 21]</td></tr>
+                <tr>
+                    <th>รับสมัครผู้มีวุฒิการศึกษา</th>
+                    <td>ม.6 เน้นคณิต-วิทย์ ไม่น้อยกว่า 30 หน่วยกิต ปวช. ช่างอุตสาหกรรม หรืออื่น ๆ ที่เกี่ยวข้อง[cite: 21]</td>
+                </tr>
+                <tr>
+                    <th>ระยะเวลาและค่าเทอม</th>
+                    <td>
+                        <div class="prog-title">ระยะเวลาศึกษา 4 ปี | ค่าเทอม 25,000 บาท[cite: 21]</div>
+                        หลักสูตรเสริมทักษะภาษาอังกฤษ เพื่อพัฒนาทักษะการสื่อสารภาษาอังกฤษ สหกิจศึกษาร่วมกับสถานประกอบการ (สภาวิศวกรรับรอง สอบใบ กว. ได้)[cite: 21]
+                    </td>
+                </tr>
+                <tr>
+                    <th>ทักษะที่ได้รับ</th>
+                    <td>
+                        <ul class="skills-list">
+                            <li>เชี่ยวชาญศาสตร์ด้านวิศวกรรมอุตสาหการ[cite: 21]</li>
+                            <li>การวางแผนการผลิต โลจิสติกส์และห่วงโซ่อุปทาน[cite: 21]</li>
+                            <li>การวางแผนจัดการทรัพยากรให้เกิดประโยชน์สูงสุด[cite: 21]</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>อาชีพหลังสำเร็จการศึกษา</th>
+                    <td>วิศวกรอุตสาหการ วิศวกรควบคุมการผลิต วิศวกรควบคุมคุณภาพ วิศวกรด้านโลจิสติกส์ ผู้จัดการโรงงาน เจ้าของกิจการ[cite: 21]</td>
+                </tr>
+            </table>
+
+            <!-- MM (เพิ่มใหม่) -->
+            <table class="prog-table theme-mm">
+                <tr><td colspan="2" class="prog-header">MM - เทคโนโลยีเครื่องกลและกระบวนการผลิต (4 ปี)[cite: 22]</td></tr>
+                <tr>
+                    <th>รับสมัครผู้มีวุฒิการศึกษา</th>
+                    <td>ม.6 ทุกแผนการศึกษา ปวช.กลุ่มช่างอุตสาหกรรมทุกสาขา เครื่องกล การผลิต ช่างยนต์ ไฟฟ้า ซ่อมบำรุง และสาขาที่เกี่ยวข้อง[cite: 22]</td>
+                </tr>
+                <tr>
+                    <th>ระยะเวลาและค่าเทอม</th>
+                    <td>
+                        <div class="prog-title">ระยะเวลาศึกษา 4 ปี | ค่าเทอม 19,000 บาท[cite: 22]</div>
+                        สหกิจศึกษาเทอมสุดท้าย สอบจบที่สถานประกอบการ เพิ่มโอกาสได้ทำงานหลังสำเร็จการศึกษา[cite: 22]
+                    </td>
+                </tr>
+                <tr>
+                    <th>ทักษะที่ได้รับ</th>
+                    <td>
+                        <ul class="skills-list">
+                            <li>ด้านปฏิบัติการเทคโนโลยีวิศวกรรมเครื่องกล กระบวนการผลิต[cite: 22]</li>
+                            <li>ด้านการเขียนแบบ การออกแบบเครื่องจักรกลอุตสาหกรรม[cite: 22]</li>
+                            <li>ด้านหุ่นยนต์และระบบควบคุมอัตโนมัติ[cite: 22]</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>อาชีพหลังสำเร็จการศึกษา</th>
+                    <td>วิศวกรในโรงงานอุตสาหกรรม เช่น วิศวกรออกแบบเครื่องจักร วิศวกรควบคุมกระบวนการผลิต วิศวกรควบคุมคุณภาพ วิศวกรซ่อมบำรุง วิศวกรด้านพลังงานและพลังงานทดแทน รับราชการ และ ผู้ประกอบการ[cite: 22]</td>
+                </tr>
+            </table>
+
+            <!-- AFE (เพิ่มใหม่) -->
+            <table class="prog-table theme-afe">
+                <tr><td colspan="2" class="prog-header">AFE - วิศวกรรมเกษตรและอาหาร (4 ปี)[cite: 23, 24]</td></tr>
+                <tr>
+                    <th>รับสมัครผู้มีวุฒิการศึกษา</th>
+                    <td>ม.6 ทุกแผนการศึกษา ปวช.กลุ่มช่างอุตสาหกรรมทุกสาขา ช่างยนต์ เครื่องกล ซ่อมบำรุง ช่างเกษตร คหกรรม เทคโนโลยีอาหาร และสาขาที่เกี่ยวข้อง[cite: 23, 24]</td>
+                </tr>
+                <tr>
+                    <th>ระยะเวลาและค่าเทอม</th>
+                    <td>
+                        <div class="prog-title">ระยะเวลาศึกษา 4 ปี | ค่าเทอม 19,000 บาท[cite: 23, 24]</div>
+                        สหกิจศึกษาเทอมสุดท้าย สอบจบที่สถานประกอบการ เพิ่มโอกาสได้ทำงานหลังสำเร็จการศึกษา[cite: 23, 24]
+                    </td>
+                </tr>
+                <tr>
+                    <th>ทักษะที่ได้รับ</th>
+                    <td>
+                        <ul class="skills-list">
+                            <li>ด้านวิศวกรรมเครื่องกล เครื่องจักรกลเกษตร เครื่องจักรแปรรูปอาหาร[cite: 23, 24]</li>
+                            <li>ด้านการเป็นนวัตกร Smart Farm และ Hygienic Design of Food Processing[cite: 23, 24]</li>
+                            <li>ด้าน Robot และ Automation System ในอุตสาหกรรมเกษตรและอาหาร[cite: 23, 24]</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>อาชีพหลังสำเร็จการศึกษา</th>
+                    <td>วิศวกรในโรงงานอุตสาหกรรม เช่น วิศวกรเครื่องกลเกษตร วิศวกรฟาร์ม วิศวกรออกแบบเครื่องจักรแปรรูปอาหาร วิศวกรการผลิต วิศวกรควบคุมคุณภาพ วิศวกรซ่อมบำรุง วิศวกรด้านเทคโนโลยีก่อนและหลังการเก็บเกี่ยว รับราชการ ผู้ประกอบการ Young Smart Farmer[cite: 23, 24]</td>
+                </tr>
+            </table>
+
+        </div>
+
+        <img src="image/footer.png" alt="Footer Contact">
+    </div>
+    <script>
+    // ตรวจสอบว่าเข้าระบบหรือยัง
+    if (localStorage.getItem("isLoggedIn") === "true") {
+        let username = localStorage.getItem("username");
+        // สร้างปุ่มใหม่ที่มุมขวาบนแทน
+        let loginDiv = document.createElement("div");
+        loginDiv.style.position = "absolute";
+        loginDiv.style.top = "20px";
+        loginDiv.style.right = "40px";
+        loginDiv.innerHTML = `<span style="color:#fff; font-family:'Kanit'; margin-right:15px;">${username}</span> <button onclick="localStorage.removeItem('isLoggedIn'); window.location.reload();" style="cursor:pointer;">ออกจากระบบ</button>`;
+        document.body.appendChild(loginDiv);
+    } else {
+        // ถ้ายันไม่เข้าระบบ ให้โชว์ปุ่มเข้าสู่ระบบที่ลิงก์ไปหน้า login.html
+        let loginDiv = document.createElement("div");
+        loginDiv.style.position = "absolute";
+        loginDiv.style.top = "20px";
+        loginDiv.style.right = "40px";
+        loginDiv.innerHTML = `<a href="login.html" style="color:#fff; font-family:'Kanit'; text-decoration:none; border:1px solid #fff; padding:5px 15px; border-radius:4px;">เข้าสู่ระบบ</a>`;
+        document.body.appendChild(loginDiv);
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รับสมัครนักศึกษา มจพ.</title>
+    <link href="style\language.css" rel="stylesheet">
+    <link href="style\base.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img src="image/header_1.png" alt="Header KMUTNB">
+        
+        <nav class="main-nav">
+            <a href="index.html">หน้าแรก</a>
+            <a href="announcement.html">ประกาศรายชื่อ <span class="dropdown-icon">▼</span></a>
+            <a href="scholarship.html">ทุนการศึกษา <span class="dropdown-icon">▼</span></a>
+            <a href="print_doc.html">พิมพ์เอกสาร <span class="dropdown-icon">▼</span></a>
+            <a href="contact.html">ติดต่อสอบถาม</a>
+        </nav>
+        
+        <img src="image/header_2.png" alt="Banner 2570">
+        
+        <!-- แถบเมนูย่อย -->
+        <nav class="sub-nav">
+            <a href="index.html">ข่าวการรับสมัคร</a>
+            <a href="courses.html">กรอกใบสมัคร</a>
+            <a href="qualification.html">ตรวจสอบคุณวุฒิ</a>
+            <a href="curriculum.html">หลักสูตรการศึกษา</a>
+            <a href="schedule.html">กำหนดการรับนักศึกษาใหม่</a>
+        </nav>
+        
+        <div class="content-area">
+            <img src="image/content_index.png" alt="News Content Grid">
+        </div>
+        
+        <img src="image/footer.png" alt="Footer Contact">
+    </div>
+
+    <script>
+    if (localStorage.getItem("isLoggedIn") === "true") {
+        let username = localStorage.getItem("username");
+        let loginDiv = document.createElement("div");
+        loginDiv.style.position = "absolute";
+        loginDiv.style.top = "20px";
+        loginDiv.style.right = "40px";
+        loginDiv.innerHTML = `<span style="color:#fff; font-family:'Kanit'; margin-right:15px;">${username}</span> <button onclick="localStorage.removeItem('isLoggedIn'); window.location.reload();" style="cursor:pointer;">ออกจากระบบ</button>`;
+        document.body.appendChild(loginDiv);
+    } else {
+        let loginDiv = document.createElement("div");
+        loginDiv.style.position = "absolute";
+        loginDiv.style.top = "20px";
+        loginDiv.style.right = "40px";
+        loginDiv.innerHTML = `<a href="login.html" style="color:#fff; font-family:'Kanit'; text-decoration:none; border:1px solid #fff; padding:5px 15px; border-radius:4px;">เข้าสู่ระบบ</a>`;
+        document.body.appendChild(loginDiv);
+    }
+</script>
+</body>
+</html>

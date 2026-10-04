@@ -1,0 +1,46 @@
+.content-area { 
+    padding: 40px 80px; 
+    min-height: 500px; 
+    color: #333; 
+}
+.content-area h2 { 
+    font-size: 20px; 
+    font-weight: 600; 
+    margin-bottom: 25px; 
+}
+.degree-group { 
+    margin-bottom: 28px; 
+}
+.group-title { 
+    font-weight: 600; 
+    font-size: 16px; 
+    margin-bottom: 8px; 
+}
+.sub-group { 
+    margin-left: 20px; 
+    margin-bottom: 12px; 
+}
+.sub-title { 
+    font-weight: 500; 
+    font-size: 15px; 
+    color: #222; 
+}
+.major-list { 
+    list-style: none; 
+    padding-left: 20px; 
+    margin: 4px 0 0; 
+}
+.major-list li { 
+    margin: 4px 0; 
+}
+.major-list a { 
+    font-size: 14px; 
+    color: #666; 
+    text-decoration: none; 
+    display: inline-block; 
+    transition: .2s; 
+}
+.major-list a:hover { 
+    color: #e65c00; 
+    text-decoration: underline; 
+}

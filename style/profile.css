@@ -1,0 +1,139 @@
+.user-nav { 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+    font-size: 14px; 
+}
+.user-nav span { 
+    color: #333; 
+}
+.btn-logout { 
+    color: #e64a19; 
+    text-decoration: underline; 
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    font-family: 'Kanit', sans-serif; 
+    font-size: 14px; padding: 0; 
+}
+.footer { 
+    padding: 12px 20px; 
+    font-size: 12.5px; 
+}
+
+.profile-card { 
+    background: #f5f5f5; 
+    border-radius: 24px; 
+    padding: 45px 55px; 
+    display: flex; 
+    align-items: flex-start; 
+    gap: 40px; 
+    width: 100%; 
+    max-width: 650px; 
+    box-shadow: 0 4px 20px rgba(0,0,0,.03); 
+}
+.avatar-circle { 
+    width: 110px; 
+    height: 110px; 
+    background: #fff; 
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    box-shadow: 0 4px 10px rgba(0,0,0,.06); 
+    flex-shrink: 0; 
+}
+.avatar-circle svg { 
+    width: 65px; 
+    height: 65px; 
+    fill: #b5b5b5; 
+}
+.profile-details { 
+    flex: 1; 
+}
+
+.name-row { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    margin-bottom: 18px; 
+    flex-wrap: wrap; 
+}
+.name-label { 
+    font-size: 18px; 
+    font-weight: 600; 
+    color: #111; 
+}
+.btn-action { 
+    background: #e0e0e0; 
+    border: none; 
+    padding: 3px 10px; 
+    border-radius: 4px; 
+    font-size: 12.5px; 
+    cursor: pointer; 
+    font-family: 'Kanit', sans-serif; 
+    color: #333; 
+    transition: .2s; 
+}
+.btn-action:hover { 
+    background: #d0d0d0; 
+}
+
+.edit-group { 
+    display: none; 
+    gap: 8px; 
+    width: 100%; 
+    margin-top: 5px; 
+}
+.edit-input { 
+    flex: 1; 
+    padding: 6px 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-family: 'Kanit', sans-serif; 
+    font-size: 14px; 
+    outline: none; 
+}
+.btn-save, .btn-cancel { 
+    color: #fff; 
+    border: none; 
+    padding: 6px 14px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-family: 'Kanit', sans-serif; 
+    font-size: 13px; 
+}
+.btn-save { 
+    background: #ff5722; 
+}
+.btn-cancel { 
+    background: #888; 
+}
+
+.course-title { 
+    font-size: 14.5px; 
+    font-weight: 500; 
+    color: #333; 
+    margin-bottom: 8px; 
+}
+.course-bar { 
+    background: #d9d9d9; 
+    height: 24px; 
+    border-radius: 4px; 
+    width: 100%; 
+    max-width: 280px; 
+    margin-bottom: 24px; 
+}
+.btn-home { 
+    display: inline-block; 
+    background: #3a3a3a; 
+    color: #fff; 
+    text-decoration: none; 
+    padding: 8px 18px; 
+    border-radius: 6px; 
+    font-size: 13.5px; 
+    transition: .2s; 
+}
+.btn-home:hover { 
+    background: #222; 
+}
